@@ -39,23 +39,23 @@ header .small {
     height: 60px;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     justify-content: space-around;
 }
 
-nav>ul>li {
+nav > ul > li {
     font-size: 1.5rem;
     width: 100%;
     text-align: center;
     line-height: 60px;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
     color: #c40f39;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
     color: #222;
     font-family: 'SUIT-Regular';
 }
@@ -69,25 +69,25 @@ nav>ul>li>a {
     z-index: 3;
 }
 
-.sub>ul {
+.sub > ul {
     height: 260px;
     padding-top: 20px;
     border-top: 2px solid #e3e3e3;
 }
 
-.sub>ul>li {
+.sub > ul > li {
     line-height: 25px;
     font-size: 1.5rem;
 }
 
-.sub>ul>li>a {
+.sub > ul > li > a {
     font-size: 1.3rem;
     font-weight: 300;
     color: #fff;
     font-family: 'SUIT-Regular';
 }
 
-.sub>ul>li>a:hover {
+.sub > ul > li > a:hover {
     color: #c40f39;
 }
 
@@ -114,15 +114,18 @@ margin: 0 auto;}
 
 .selectbox {
     width: 20%;
+    
 }
+.fa-bars{font-size: 2.5rem; position: absolute; top: 15px; right:30px;
+color:#222; cursor: pointer;}
 
 select {
-    padding: 0 5px;
+    padding: 0px 5px;
     border-radius: 0;
     font-size: 1.1rem;
     margin-left: 10px;
     color: #706f6f;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     font-family: 'AppleSDGothicNeo';
 }
 option{
@@ -145,7 +148,7 @@ option{
 @media all and (max-width:500px){
     #familysite{display: none;}
     #logo{width: 200px;}
-    #language{margin-left: 0; width: 40px; padding: 0;}
+    #language{margin: 0px 10px 10px 20px; width: 55px; height: 25px;}
     .selectbox {width: 30%;}
 }
 
