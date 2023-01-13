@@ -1,8 +1,10 @@
 @charset "utf-8";
-#contain{width: 100%; padding-top: 65px;}
+#contain{width: 100%;}
 #wrap{width: 1400px; margin: 0 auto;}
 #subNav{width: 1400px; margin: 0 auto; font-family:'SUIT-Regular'; font-size: 1.2rem;
 padding: 30px 0 80px;}
 #subNav > p{color: #666;}
 #subNav > p > span {color: #222;}
-#Home > h2{font-size:3rem;}
+#Home > h2{font-size:3rem; font-weight: 800; font-family:'AppleSDGothicNeo';}
+#Home > h2 > span{color:#63318a;}
+#Home {padding-bottom: 75px;}

@@ -1,31 +1,165 @@
 @charset "utf-8";
 
-header{width: 100%; height: 65px; position: absolute; top: 0; left: 0;
-border-bottom: 2px solid #e3e3e3;}
-nav{width: 65%; height: 60px;}
-header .small{width: 1400px; height: 65px; margin: 0 auto; 
-    z-index: 3; display: flex; align-items: center; justify-content: space-between;}
-#logo{width: 15%; height: 60px; margin-left: 20px;}
-#logo:hover{cursor: pointer;}
-#logo img{max-width: 100%; height: 60px;}
-nav > ul{display: flex; justify-content: space-around;}
-nav > ul > li{font-size: 1.5rem; width: 100%; text-align: center; line-height: 60px;}
-nav > ul > li > a:hover{color: #c40f39; }
-nav > ul > li > a{color:#222; font-family:'SUIT-Regular';}
-.sub {display: flex; flex-direction: column; height:260px;
-    display: none; 
-    position: relative; z-index: 3;}
-.sub > ul{height: 260px; padding-top: 20px; border-top: 2px solid #e3e3e3;}
-.sub > ul > li{line-height: 25px; font-size: 1.5rem;}
-.sub > ul > li > a{font-size: 1.3rem; font-weight: 300; color: #fff; font-family:'SUIT-Regular';}
-.sub > ul > li > a:hover{color: #c40f39;}
-.navdown{width: 100%; height: 259px; position: absolute; top: 65px; left: 0; background-color:blueviolet;
-transition: 0.5s;
- display: none;
+header {
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #e3e3e3;
 }
 
-.selectbox{width: 20%;}
-select{border-radius: 0; font-size: 1.1rem; margin-left: 10px; color: #706f6f;
-border: 1px solid #ddd; font-family:'AppleSDGothicNeo';}
-#language{margin-left: 60px; width: 80px; height: 24px;}
-#familysite{width: 120px; height: 24px;}
+nav {
+    width: 65%;
+    height: 60px;
+}
+
+header .small {
+    width: 1400px;
+    height: 65px;
+    margin: 0 auto;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 15%;
+    height: 60px;
+    margin-left: 20px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#logo img {
+    max-width: 100%;
+    height: 60px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav>ul>li {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+nav>ul>li>a:hover {
+    color: #c40f39;
+}
+
+nav>ul>li>a {
+    color: #222;
+    font-family: 'SUIT-Regular';
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    display: none;
+    position: relative;
+    z-index: 3;
+}
+
+.sub>ul {
+    height: 260px;
+    padding-top: 20px;
+    border-top: 2px solid #e3e3e3;
+}
+
+.sub>ul>li {
+    line-height: 25px;
+    font-size: 1.5rem;
+}
+
+.sub>ul>li>a {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'SUIT-Regular';
+}
+
+.sub>ul>li>a:hover {
+    color: #c40f39;
+}
+
+.navdown {
+    width: 100%;
+    height: 259px;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background-color: #63318a;
+    transition: 0.5s;
+    display: none;
+}
+#wrapwrap{width: 1400px; display: flex; align-items: center; justify-content: space-between;
+margin: 0 auto;}
+#empty1{width: 42.5%;}
+#empty2{width: 42.5%;}
+
+#imgWrap {
+    width: 15%;
+    height: 116px;
+    margin-top: 40px;
+}
+
+.selectbox {
+    width: 20%;
+}
+
+select {
+    padding: 0 5px;
+    border-radius: 0;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    color: #706f6f;
+    border: 1px solid #ddd;
+    font-family: 'AppleSDGothicNeo';
+}
+option{
+    white-space: nowrap;
+    padding: 0 1px 2px;
+}
+
+#language {
+    margin-left: 60px;
+    width: 80px;
+    height: 24px;
+}
+
+#familysite {
+    width: 120px;
+    height: 24px;
+}
+
+
+@media all and (max-width:500px){
+    #familysite{display: none;}
+    #logo{width: 200px;}
+    #language{margin-left: 0; width: 40px; padding: 0;}
+    .selectbox {width: 30%;}
+}
+
+@media all and (min-width:501px) and (max-width:1399px){
+    #familysite{display: none;}
+    #logo{width: 200px;}
+    #language{margin-left: 30px;}
+}
+
+@media all and (max-width:1100px){
+    nav{display: none;}
+}
+
+@media all and (max-width:1400px){
+    header .small{width: 100%;}
+    #imgWrap{display: none;}
+}
