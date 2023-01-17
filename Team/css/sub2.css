@@ -1,10 +1,20 @@
 @charset "utf-8";
-#contain{width: 100%;}
+#contain{width: 100%; margin-top: 65px;}
 #wrap{width: 1400px; margin: 0 auto;}
 #subNav{width: 1400px; margin: 0 auto; font-family:'SUIT-Regular'; font-size: 1.2rem;
 padding: 30px 0 80px;}
 #subNav > p{color: #666;}
 #subNav > p > span {color: #222;}
+#leftNav{float: left; width: 15%; margin-right: 25px;}
 #Home > h2{font-size:3rem; font-weight: 800; font-family:'AppleSDGothicNeo';}
 #Home > h2 > span{color:#63318a;}
 #Home {padding-bottom: 75px;}
+#ask{font-family:'SUIT-Regular';}
+#ask > ul > li{line-height: 30px;}
+#ask > ul > li:nth-of-type(1){font-weight: 800;}
+#ask > ul > li > a{font-size: 1.8rem;}
+#rightNav{width: 926px; float: left;}
+#rightNav > h2{font-size: 3rem; font-family:'AppleSDGothicNeo'; font-weight: 800; padding-bottom: 5px;
+text-align: center;}
+#rightNav > p {font-size: 2rem; font-family:'SUIT-Regular'; font-weight: 500; color: #666;
+text-align: center;}

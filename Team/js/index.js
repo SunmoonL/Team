@@ -22,12 +22,8 @@ function detectMediaSize(){
                 $(this).children(".sub").stop().slideToggle();
                 $(this).siblings().children(".sub").stop().slideUp();
             });
-            $("nav > ul > li").hover(function(){
-                $(this).find("ul").css({borderTop:"2px solid #c40f39"});
-            }).mouseleave(function(){
-                $(this).find("ul").css({borderTop:"2px solid #e3e3e3"});
-            });
         });
+        
     }
     else if(window.matchMedia('all and (min-width: 1400px)').matches){
         $(function(){

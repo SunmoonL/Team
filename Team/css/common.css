@@ -7,6 +7,7 @@ header {
     top: 0;
     left: 0;
     border-bottom: 2px solid #e3e3e3;
+    z-index: 10;
 }
 
 nav {
@@ -42,8 +43,6 @@ header .small {
 .nav-icon-5{
     width: 25px;
     height: 24px;
-    top: 8px;
-    left: 10px;
     position: relative;
     cursor: pointer;
     display: none;
@@ -155,11 +154,21 @@ nav > ul > li > a {
     transition: 0.5s;
     display: none;
 }
-#wrapwrap{width: 1400px; display: flex; align-items: center; justify-content: space-between;
-margin: 0 auto;}
-#empty1{width: 42.5%;}
-#empty2{width: 42.5%;}
+#wrapwrap {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
+#empty1 {
+    width: 42.5%;
+}
+
+#empty2 {
+    width: 42.5%;
+}
 #imgWrap {
     width: 15%;
     height: 116px;
@@ -178,7 +187,7 @@ select {
     font-size: 1.1rem;
     margin-left: 10px;
     color: #706f6f;
-    border: 2px solid #ddd;
+    border: 1px solid #ddd;
     font-family: 'AppleSDGothicNeo';
 }
 option{
@@ -197,36 +206,132 @@ option{
     height: 24px;
 }
 
+#banner{display: none;}
 
-@media all and (max-width:500px){
-    header{border-bottom: 1px solid #eee;}
-    .down{display: block;}
-    #familysite{display: none;}
-    #logo{width: 200px;}
-    #language{position: absolute; top:20px; right:70px; width: 55px; height: 25px; border: 1px solid #eee;}
-    .selectbox {width: 35%;}
-    nav > ul {flex-direction: column; margin-top:65px; width: 100%; height: auto; position: absolute;
-    top:0; left:0; background-color: #fff;}
-    nav > ul > li {width: 95%; font-size: 1.8rem; font-weight: 700; border-bottom: 1px solid #eee;
-    margin: 0px auto; text-align: left;}
-    .sub{height: auto;}
-    .sub > ul {background-color: #63318a; height: auto; padding:10px 20px;}
-    .sub > ul > li{padding: 10px 0px;}
-    .sub > ul > li > a{font-size: 1.5rem; font-weight: 300; padding: 10px 0px;}
-    .nav-icon-5{position: absolute; display: inline-block; top:20px; left: 455px;}
+@media all and (max-width:500px) {
+    header {
+        border-bottom: 1px solid #eee;
+    }
+
+    .down {
+        display: block;
+    }
+
+    #familysite {
+        display: none;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    #language {
+        position: absolute;
+        top: 20px;
+        right: 70px;
+        width: 55px;
+        height: 25px;
+        border: 1px solid #eee;
+    }
+
+    .selectbox {
+        width: 35%;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        margin-top: 65px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+    }
+
+    nav>ul>li {
+        width: 95%;
+        font-size: 1.8rem;
+        font-weight: 700;
+        border-bottom: 1px solid #eee;
+        margin: 0px auto;
+        text-align: left;
+    }
+
+    nav>ul>li>a {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .sub {
+        height: auto;
+    }
+
+    .sub>ul {
+        background-color: #63318a;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .sub>ul>li {
+        padding: 10px 0px;
+    }
+
+    .sub>ul>li>a {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding: 10px 0px;
+    }
+
+    .nav-icon-5 {
+        position: absolute;
+        display: inline-block;
+        top: 20px;
+        right: 20px;
+    }
+
+    #banner {
+        border-bottom: none;
+        padding: 20px;
+        display: block;
+    }
+
+    #banner>a {
+        width: 100%;
+        height: auto;
+    }
+
+    #banner>a>img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media all and (min-width:501px) and (max-width:1399px) {
+    #familysite {
+        display: none;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    #language {
+        margin-left: 20px;
+    }
 }
 
-@media all and (min-width:501px) and (max-width:1399px){
-    #familysite{display: none;}
-    #logo{width: 200px;}
-    #language{margin-left: 20px;}
+@media all and (max-width:1100px) {
+    nav {
+        display: none;
+    }
 }
 
-@media all and (max-width:1100px){
-    nav{display: none;}
-}
+@media all and (max-width:1400px) {
+    header .small {
+        width: 100%;
+    }
 
-@media all and (max-width:1400px){
-    header .small{width: 100%;}
-    #imgWrap{display: none;}
+    #imgWrap {
+        display: none;
+    }
 }
