@@ -48,7 +48,7 @@ header .small {
     display: none;
   }
   .nav-icon-5 span{
-    background-color:#111;
+    background-color:#222;
     position: absolute;
     border-radius: 2px;
     transition: .3s cubic-bezier(.8, .5, .2, 1.4);
@@ -109,8 +109,8 @@ nav > ul > li > a:hover {
 }
 
 nav > ul > li > a {
+    display:block;
     color: #222;
-    font-family: 'SUIT-Regular';
 }
 
 .sub {
@@ -134,10 +134,10 @@ nav > ul > li > a {
 }
 
 .sub > ul > li > a {
+    display:block;
     font-size: 1.3rem;
     font-weight: 300;
     color: #fff;
-    font-family: 'SUIT-Regular';
 }
 
 .sub > ul > li > a:hover {
@@ -188,7 +188,6 @@ select {
     margin-left: 10px;
     color: #706f6f;
     border: 1px solid #ddd;
-    font-family: 'AppleSDGothicNeo';
 }
 option{
     white-space: nowrap;
@@ -333,5 +332,200 @@ option{
 
     #imgWrap {
         display: none;
+    }
+}
+
+/* footer */
+
+@media(max-width:500px){
+    footer{
+        clear: both;
+        margin-top:100px;
+        width:100%; 
+        font-size:1.2rem;
+        background:#575756;
+        position: relative;
+    }
+    footer li, footer a, footer p, footer span, footer button,footer i{
+        color:white;
+    }
+    footer ul{
+        width:100%; margin:0 auto;
+        padding:15px 0 ;
+    }
+    footer ul:not(:nth-of-type(2)){
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+        
+    footer button{
+        width:100%;
+        padding:20px 0; margin:0 auto;
+        text-align:center;
+        position: absolute;
+        top:0;
+        border-bottom:1px solid #5f5f5d;
+    }
+    footer button i{
+        transform: rotate(180deg);
+    
+    }
+    footer ul:nth-of-type(1){
+       padding-top:75px;
+    }
+    footer ul:nth-of-type(2){
+        background:#5f5f5d;
+        padding:10px;
+        display:none;
+        position: absolute;
+        top:55px;
+    }
+    footer ul:nth-of-type(2) span{
+        display:none;
+    }
+    footer ul:nth-of-type(2) li:nth-of-type(3){
+        float:left; margin-right:10px;
+    }
+
+    footer li{
+        padding:5px 5px;
+    }
+
+    footer li span{
+        font-size:1.2rem;
+        margin-left:10px;
+    }
+    footer .copyright{
+        display:none;
+    }
+    
+    footer .icon{
+        width:100%; margin:-15px auto 0 auto;
+        font-size:1.1rem;
+    }
+    footer .icon li{
+        margin:0 5px;
+        text-align:center;
+    }
+    footer .icon li img{
+        padding:5px;
+    }
+
+}
+@media(min-width:501px) and (max-width:1399px){
+    footer{
+        clear: both;
+        margin-top:100px;
+        width:100%; 
+        padding:50px 0;
+        font-size:1.4rem;
+        background:#575756;
+    }
+    
+    footer ul{
+        width:70%; margin:0 auto;
+        margin-bottom:30px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer li{
+        margin:5px 5px;
+    }
+    footer li span{
+        font-size:1.2rem;
+        margin-left:10px;
+    }
+    
+    footer ul:nth-of-type(1) li a,
+    footer ul:nth-of-type(1) li span{
+        color:white;
+    }
+    
+    footer ul:not(:nth-of-type(1)) li,
+    footer ul:not(:nth-of-type(1)) li a,
+    footer ul:not(:nth-of-type(1)) li span{
+        color:#b4b4b4;
+    }
+    
+    
+    footer p{
+        width:100%; text-align: center;
+        color:#b4b4b4;
+        margin-bottom:30px;
+    }
+    footer button{
+        display:none;
+    }
+    footer .icon{
+        width:100%; margin:0 auto;
+        font-size:1.1rem;
+
+    }
+    footer .icon li{
+        margin:0 5px;
+        text-align:center;
+    }
+    footer .icon li img{
+        padding:5px;
+    }
+}
+@media(min-width:1400px){
+    footer{
+        clear:both;
+        margin-top:100px;
+        width:100%; 
+        padding:50px 0;
+        font-size:1.4rem;
+        background:#575756;
+    }
+    
+    footer ul{
+        width:70%; margin:0 auto;
+        margin-bottom:30px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer li{
+        margin:5px 5px;
+    }
+    footer li span{
+        font-size:1.2rem;
+        margin-left:10px;
+    }
+    
+    footer ul:nth-of-type(1) li a,
+    footer ul:nth-of-type(1) li span{
+        color:white;
+    }
+    
+    footer ul:not(:nth-of-type(1)) li,
+    footer ul:not(:nth-of-type(1)) li a,
+    footer ul:not(:nth-of-type(1)) li span{
+        color:#b4b4b4;
+    }
+    
+    
+    footer p{
+        width:100%; text-align: center;
+        color:#b4b4b4;
+        margin-bottom:30px;
+    }
+    footer button{
+        display:none;
+    }
+    footer .icon{
+        width:100%; margin:0 auto;
+        font-size:1.1rem;
+
+    }
+    footer .icon li{
+        margin:0 5px;
+        text-align:center;
+    }
+    footer .icon li img{
+        padding:5px;
     }
 }

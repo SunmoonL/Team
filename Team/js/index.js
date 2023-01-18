@@ -25,7 +25,7 @@ function detectMediaSize(){
         });
         
     }
-    else if(window.matchMedia('all and (min-width: 1400px)').matches){
+    else if(window.matchMedia('all and (min-width: 1100px)').matches){
         $(function(){
             $('nav').mouseenter(function(){
                 $('.sub').show();
@@ -53,4 +53,25 @@ function detectMediaSize(){
 }
 window.addEventListener('resize',detectMediaSize,false);
 detectMediaSize();
+
+$(function(){
+    $(".faq").click(function(){
+        $(this).siblings().slideToggle("fast");
+        $(this).parents().siblings().children(".answer").slideUp("fast");
+    });
+});
+
+//footer
+$(document).ready(function(){
+    $('.business_btn').click(function(){
+        $('.business').toggle();
+        if($('.business').css('display')=='block'){
+            $('.business_btn i').css('transform','rotate(0)')
+            $('footer ul:first').css('padding-top','200px')
+        }else{
+            $('.business_btn i').css('transform','rotate(180deg)')
+            $('footer ul:first').css('padding-top','75px')
+        }
+    })
+})
 
