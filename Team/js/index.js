@@ -54,13 +54,85 @@ function detectMediaSize(){
 window.addEventListener('resize',detectMediaSize,false);
 detectMediaSize();
 
+//faq
 $(function(){
     $(".faq").click(function(){
-        $(this).siblings().slideToggle("fast");
-        $(this).parents().siblings().children(".answer").slideUp("fast");
+        $(this).siblings().stop().slideToggle("fast");
+        $(this).parents().siblings().children(".answer").stop().slideUp("fast");
+        $(this).toggleClass("active");
+        $(this).parents().siblings().children(".faq").removeClass("active");
     });
 });
 
+$(function(){
+    $("#pager > a").eq(0).click(function(){
+        $("#list1").show();
+        $("#list2,#list3,#list4,#list5").hide();
+        $($(this)).addClass("on");
+        $($(this)).siblings().removeClass("on");
+    })
+})
+
+$(function(){
+    $("#pager > a").eq(1).click(function(){
+        $("#list2").show();
+        $("#list1,#list3,#list4,#list5").hide();
+        $($(this)).addClass("on");
+        $($(this)).siblings().removeClass("on");
+    })
+})
+
+$(function(){
+    $("#subtab > li").eq(0).click(function(){
+        $("#list1").show();
+        $("#list2,#list3,#list4,#list5").hide();
+        $($(this)).addClass("active1");
+        $($(this)).siblings().removeClass("active1");
+        $("#pager > a").eq(0).on("click", function () {
+            $("#list1").show();
+            $("#list2,#list3,#list4,#list5").hide();
+            $($(this)).addClass("on");
+            $($(this)).siblings().removeClass("on");
+        });
+        $("#pager > a").eq(1).show();
+    })
+})
+
+$(function(){
+    $("#subtab > li").eq(1).click(function(){
+        $("#list3").show();
+        $("#list1,#list2,#list4,#list5").hide();
+        $($(this)).addClass("active1");
+        $($(this)).siblings().removeClass("active1");
+        $("#pager > a").eq(0).addClass("on");
+        $("#pager > a").eq(0).off("click").click();
+        $("#pager > a").eq(1).hide();
+    })
+})
+
+$(function(){
+    $("#subtab > li").eq(2).click(function(){
+        $("#list4").show();
+        $("#list2,#list1,#list3,#list5").hide();
+        $($(this)).addClass("active1");
+        $($(this)).siblings().removeClass("active1");
+        $("#pager > a").eq(0).addClass("on");
+        $("#pager > a").eq(0).off("click").click();
+        $("#pager > a").eq(1).hide();
+    })
+})
+
+$(function(){
+    $("#subtab > li").eq(3).click(function(){
+        $("#list5").show();
+        $("#list2,#list3,#list4,#list1").hide();
+        $($(this)).addClass("active1");
+        $($(this)).siblings().removeClass("active1");
+        $("#pager > a").eq(0).addClass("on");
+        $("#pager > a").eq(0).off("click").click();
+        $("#pager > a").eq(1).hide();
+    })
+})
 //footer
 $(document).ready(function(){
     $('.business_btn').click(function(){
