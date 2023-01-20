@@ -94,7 +94,7 @@ $(function(){
             $($(this)).addClass("on");
             $($(this)).siblings().removeClass("on");
         });
-        $("#pager > a").eq(1).show();
+        $("#pager > a").eq(1).show().removeClass("on");
     })
 })
 
