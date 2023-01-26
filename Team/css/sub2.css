@@ -17,7 +17,7 @@ padding: 30px 0 80px;}
 
 #rightNav{width: 926px; float: left; padding-bottom: 100px;}
 #rightNav > h2{font-size: 3rem; font-family:'AppleSDGothicNeo'; font-weight: 800; padding-bottom: 5px;
-text-align: center;}
+text-align: center; letter-spacing: -2px;}
 #rightNav > p {font-size: 2rem; font-family:'SUIT-Regular'; font-weight: 500; color: #666;
 text-align: center; padding-bottom: 30px;}
 
@@ -59,22 +59,23 @@ outline: none; transition: all 0.3s ease-in-out;}
 .numtitle > span{display: inline-block; width: 25px; height: 19px; padding: 0 2px; text-align: center; line-height: 19px; font-size: 1.45rem; color: #fff; background-color: #c40f39; margin-right: 5px;}
 .fa-circle-exclamation{color: #c40f39;}
 #list2,#list3,#list4,#list5{display: none;}
-#mobmenu{width: 100%;}
-#mobmenu > ul {display: inline-block; width: 100%;}
+#mobmenu{width: 100%; position: fixed; display: none; z-index: 50;}
+#mobmenu > ul {display: inline-block; width: 100%; position: relative;}
 #mobmenu > ul > li:nth-of-type(1){width: 50%; float: left; text-align: center; position: relative; background-color: #7e3fb0;}
 #mobmenu > ul > li:nth-of-type(1)::after{content: ""; position: absolute; width: 0px; height: 0px; border-left: 20px solid #7e3fb0;
-border-top: 22px solid transparent; border-bottom: 23px solid transparent; right: -19px; top: 0; z-index: 88;}
+border-top: 22px solid transparent; border-bottom: 23px solid transparent; right: -19px; top: 0; z-index: 2;}
 #mobmenu > ul > li:nth-of-type(1) > a{font-size: 1.3rem; font-weight: 300; padding: 15px 0; display: inline-block; width: 80%; color: #fff;}
 #mobmenu > ul > li:nth-of-type(2){width: 50%; float: left; text-align: center; position: relative; background-color: #5d2e81;}
 #mobmenu > ul > li:nth-of-type(2)::after{content: ""; position: absolute; width: 6px; height: 10px; background: url("/Team/img/mob_arrow.png") no-repeat; right: 15px; z-index: 88; top: 16px; background-size: 6px;
 transform: rotate(90deg);}
 #mobmenu > ul > li:nth-of-type(2) > a{font-size: 1.3rem; font-weight: 300; padding: 15px 0; width: 80%; display: inline-block; color: #fff;}
-#secondmenu{width: 100%;}
+#secondmenu{width: 100%; position: relative; display: none;}
 #secondmenu > li{border-top: 1px solid rgb(255, 255, 255, 0.1);}
 #secondmenu > li > a{color: #fff; padding: 15px 0; display: inline-block; font-size: 1.2rem; font-weight: 200; width: 100%;}
 #inner{width: 100%; text-align: center;}
 #select{width: 90%; border-left: none; border-right: none; border-top: none; height: 44px; font-size: 1.6rem; color: #222;
-margin: 20px 0; position: relative; }
+margin: 20px 0; position: relative; display: none;}
+#select:focus{box-shadow: 0px 0px 5px dodgerblue; outline: 2px solid #222; border-radius: 5px;}
 #select > option{padding: 0px 2px 1px; display: block; white-space: nowrap; height: 1.6rem;}
 
 @media all and (max-width:500px) {
@@ -88,13 +89,19 @@ margin: 20px 0; position: relative; }
     .faq{font-size: 1.5rem; padding-left: 35px; height: 55px; line-height: 55px;}
     .faq:before{font-size: 2.3rem; left: 0;}
     .faq:after{right: 5px; top:23px; width: 13px; height: 8px; background-size: 13px;}
+    #mobmenu{display: block;}
+    #select{display: inline; margin-top: 60px;}
+    .small{position: fixed; background-color: #fff;}
 }
 
 @media all and (min-width:501px) and (max-width:1399px) {
     #subNav > p{margin-left: 2.5%;}
     #leftNav{display: none;}
-    #rightNav{width: 90%; float: none; margin: 0 auto; padding-bottom: 0px;}
-    #listbox{width: 600px; margin: 50px auto;}
+    #rightNav{width: 100%; float: none; margin: 0 auto; padding-bottom: 0px;}
+    #listbox{width: 80vw; margin: 50px auto;}
+    .faq{padding-left: 10vw;}
+    .faq:before{left: 0;}
+    .faq:after{right: 0;}
 }
 
 @media all and (max-width:1400px) {

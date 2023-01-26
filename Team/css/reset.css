@@ -6,7 +6,13 @@ html{font-size: 62.5%;}
 button{background:none; border:none; cursor: pointer;}
 h1,h2,h3,h4,h5,h6{font-family:'AppleSDGothicNeo','Noto Sans KR',sans-serif;}
 
-@import url("//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css");
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-style: normal;
+    font-weight: 400;
+    src:url('font/AppleSDGothicNeoR.woff') format('woff'),
+    url('font/AppleSDGothicNeoR.ttf') format('opentype');
+ }
 
 @font-face {
     font-family: 'SUIT-Regular';
