@@ -160,13 +160,42 @@
                 <div id="askbox">
                     <form action="" id="write">
                         <div><span>제목</span><input type="text" placeholder="제목을 입력해주세요."></div>
-                        <div><span>구분</span><a href="" class="active3">교환/환불</a><a href="">제품</a><a href="">AS</a><a href="">기타</a></div>
+                        <div><span>구분</span><a href="" class="active3" onclick="return false;">교환/환불</a><a href="" onclick="return false;">제품</a><a href="" onclick="return false;">AS</a><a href="" onclick="return false;">기타</a></div>
                         <div><span>작성자</span><input type="text"></div>
-                        <div><span>연락처</span><input type="text"></div>
-                        <div><span>이메일</span><input type="text"></div>
+                        <div><span>연락처</span><select name="" id="tele">
+                                <option value="">010</option>
+                                <option value="">011</option>
+                                <option value="">016</option>
+                                <option value="">017</option>
+                                <option value="">018</option>
+                                <option value="">019</option>
+                            </select><input type="text" class="tel"><input type="text" class="tel"></div>
+                        <div><span>이메일</span><input type="text"><b>@</b><input type="text" id="mail2"><select name="" id="mail">
+                        <option value="직접입력" selected>직접입력</option>
+                        <option value="naver.com">naver.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                        <option value="hanmail.net">hanmail.net</option>
+                        <option value="daum.net">daum.net</option>
+                        <option value="empal.com">empal.com</option>
+                        <option value="paran.com">paran.com</option>
+                        <option value="nate.com">nate.com</option>
+                        <option value="korea.com">korea.com</option>
+                        <option value="hitel.net">hitel.net</option>
+                        <option value="unitel.co.kr">unitel.co.kr</option>
+                        <option value="kornet.net">kornet.net</option>
+                        <option value="nownuri.net">nownuri.net</option>
+                        <option value="lycos.or.kr">lycos.or.kr</option>
+                        <option value="hanafos.com">hanafos.com</option>
+                        <option value="dreamwiz.com">dreamwiz.com</option>
+                        <option value="hanmir.com">hanmir.com</option>
+                        <option value="freechal.com">freechal.com</option>
+                        <option value="chollian.net">chollian.net</option>
+                        <option value="yahoo.co.kr">yahoo.co.kr</option>
+                        <option value="hotmail.net">hotmail.net</option>
+                        </select></div>
                         <div><span>비밀번호</span><input type="text"></div>
-                        <div><span>상세내용</span><input type="text"></div>
-                        <div><span>파일첨부</span><input type="text"></div>
+                        <div><span>상세내용</span><textarea name="" id="" cols="30" rows="10"></textarea></div>
+                        <div><span>파일첨부</span><input type="text" value disabled=""></div>
                         <div><span>개인정보취급방침</span><input type="text"></div>
                     </form>
                 </div>

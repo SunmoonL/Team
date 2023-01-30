@@ -179,13 +179,25 @@ $(document).on('change', "#select", function () {
         $("#pager > a").eq(1).hide();
     }
 });
-
+//1:1문의
 $(function(){
     $("#write > div:nth-of-type(2) > a").click(function(){
-        $($(this)).siblings().removeClass("active3");
-        $($(this)).addClass("active3");
+        $(this).addClass("active3");
+        $(this).siblings().removeClass("active3");
     })
 });
+
+$(document).on('change',"#mail",function () {
+
+    var pro=$(this).children('option:selected').val()
+    $('#mail2').val(pro);
+
+    if($(this).val()=="직접입력"){
+       $("#mail2").focus();
+       $("#mail2").val("");
+    }
+});
+
 
 //footer
 $(document).ready(function(){
