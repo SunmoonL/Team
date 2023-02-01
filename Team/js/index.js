@@ -16,7 +16,7 @@ $(function(){
 // 헤더 이펙트
 
 function detectMediaSize(){
-    if(window.matchMedia('all and (min-width: 0px) and (max-width: 500px)').matches){
+    if(window.matchMedia('all and (min-width: 0px) and (max-width: 1100px)').matches){
         $(function(){
             $('nav > ul > li').click(function(){
                 $(this).children(".sub").stop().slideToggle();
@@ -188,7 +188,6 @@ $(function(){
 });
 
 $(document).on('change',"#mail",function () {
-
     var pro=$(this).children('option:selected').val()
     $('#mail2').val(pro);
 

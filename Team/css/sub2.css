@@ -92,6 +92,9 @@ margin: 20px 0; position: relative; display: none;}
     #mobmenu{display: block;}
     #select{display: inline; margin-top: 60px;}
     .small{position: fixed; background-color: #fff;}
+    #searchbar {width:100%;}
+    #searchbtn {width: 20%;}
+    #searchbar > input{width: 80%;}
 }
 
 @media all and (min-width:501px) and (max-width:1399px) {
@@ -106,4 +109,5 @@ margin: 20px 0; position: relative; display: none;}
 
 @media all and (max-width:1400px) {
     #wrap{width: 100%;}
+    #subNav{width: 100%;}
 }

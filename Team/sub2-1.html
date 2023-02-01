@@ -69,8 +69,8 @@
                     <li><a href="">고객지원</a><div class="down"><i class="fa-solid fa-angle-down"></i></div>
                         <div class="sub">
                             <ul>
-                                <li><a href="#">자주묻는질문</a></li>
-                                <li><a href="#">문의하기</a></li>
+                                <li><a href="sub2.html">자주묻는질문</a></li>
+                                <li><a href="sub2-1.html">문의하기</a></li>
                                 <li><a href="#">이벤트</a></li>
                             </ul>
                         </div>
@@ -131,8 +131,8 @@
                 <div id="Home"><h2>홈<br><span>고객지원</span></h2></div>
                 <div id="ask">
                     <ul>
-                        <li><a href="">자주묻는질문</a></li>
-                        <li><a href="">1:1고객문의</a></li>
+                        <li><a href="sub2.html">자주묻는질문</a></li>
+                        <li><a href="sub2-1.html">1:1고객문의</a></li>
                         <li><a href="">무상보증 서비스</a></li>
                         <li><a href="">비즈니스</a></li>
                         <li><a href="">모나미 뉴스</a></li>
@@ -144,8 +144,8 @@
                     <li><a>고객지원</a></li>
                     <li><a>1:1고객문의</a>
                     <ul id="secondmenu">
-                        <li><a href="">자주묻는질문</a></li>
-                        <li><a href="">1:1고객문의</a></li>
+                        <li><a href="sub2.html">자주묻는질문</a></li>
+                        <li><a href="sub2-1.html">1:1고객문의</a></li>
                         <li><a href="">무상보증 서비스</a></li>
                         <li><a href="">비즈니스</a></li>
                         <li><a href="">모나미 뉴스</a></li>
@@ -158,11 +158,11 @@
                 <h2>1:1고객문의</h2>
                 <p>질문 전, 자주 묻는 질문 게시판을 확인해 주세요.</p>
                 <div id="askbox">
-                    <form action="" id="write">
+                    <form action="#" id="write">
                         <div><span>제목</span><input type="text" placeholder="제목을 입력해주세요."></div>
                         <div><span>구분</span><a href="" class="active3" onclick="return false;">교환/환불</a><a href="" onclick="return false;">제품</a><a href="" onclick="return false;">AS</a><a href="" onclick="return false;">기타</a></div>
                         <div><span>작성자</span><input type="text"></div>
-                        <div><span>연락처</span><select name="" id="tele">
+                        <div><span>연락처</span><select name="tele" id="tele">
                                 <option value="">010</option>
                                 <option value="">011</option>
                                 <option value="">016</option>
@@ -170,7 +170,7 @@
                                 <option value="">018</option>
                                 <option value="">019</option>
                             </select><input type="text" class="tel"><input type="text" class="tel"></div>
-                        <div><span>이메일</span><input type="text"><b>@</b><input type="text" id="mail2"><select name="" id="mail">
+                        <div><span>이메일</span><input type="text"><b>@</b><input type="text" id="mail2"><select name="mail" id="mail">
                         <option value="직접입력" selected>직접입력</option>
                         <option value="naver.com">naver.com</option>
                         <option value="gmail.com">gmail.com</option>
@@ -194,11 +194,38 @@
                         <option value="hotmail.net">hotmail.net</option>
                         </select></div>
                         <div><span>비밀번호</span><input type="text"></div>
-                        <div><span>상세내용</span><textarea name="" id="" cols="30" rows="10"></textarea></div>
-                        <div><span>파일첨부</span><input type="text" value disabled=""></div>
-                        <div><span>개인정보취급방침</span><input type="text"></div>
+                        <div><span>상세내용</span><textarea name="detail" cols="30" rows="10"></textarea></div>
+                        <div><span>파일첨부</span>
+                            <div>
+                            <input type="text" value disabled=""><label class="file_btn" for="bf_file">파일선택</label> <input type="file" id="bf_file" name="bf_file[]"><br>
+                            *사진, 이미지파일 (JPG, GIF, PNG) 만 첨부 가능하며 파일 사이즈는 1.5mb이하로 해주시기 바랍니다.
+                            </div>
+                        </div>
+                        <div><span>개인정보<br>취급방침</span><div><p>개인정보의 수집 및 이용 목적<br>
+                            ‘고객문의’, 제품 불편신고 서비스를 이용하시고자 할 경우, 해당 서비스를 위한 최소한의 개인정보만을 수집합니다.<br><br>
+                            
+                            * 수집하는 개인정보의 항목<br>
+                            이름, 전화번호, 이메일<br>
+                            단, 이용자의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태<br> 및 성생활 등)는 수집하지 않습니다.</p></div></div>
+                        <div>
+                            <div id="agreebox">
+                                <input type="checkbox" id="chkbox">
+                                <label for="chkbox">
+                                    <span></span>
+                                    개인정보 정책에 동의합니다.
+                                </label>
+                            <p>
+                                (주)모리스는 고객님의 개인정보를 중요시 하고 있습니다.<br>
+                                이용을 위하여 개인정보취급방침에 동의해주세요.
+                            </p>
+                        </div>
+                        </div>
                     </form>
+                    <div id="inqbox">
+                    <a href="" class="inq">확인</a>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
