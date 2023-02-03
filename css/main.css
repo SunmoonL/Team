@@ -297,7 +297,6 @@
     #news {
         width: 100%;
         height: 800px;
-        border-bottom: 1px solid #ccc;
     }
     .news-all-box{
         width:100%;
@@ -368,53 +367,6 @@
     .blackrabbit-set p {
         height:90px;
     }
-
-    /* 맨 밑 familysite box */
-    #family-box{
-        width:100%;
-        margin:0 auto;
-        position:relative;
-    }
-    .monami-left, .monami-right{
-        font-size:2rem;
-        position: absolute;
-    }
-    .monami-left{
-        top:38%;
-        left:3%;
-    }
-    .monami-right{
-        top:38%;
-        right:3%;
-    }
-    .family-wrap{
-        width:80%;
-        height:100px;
-        margin:0 auto;
-        padding:25px 0;
-        overflow: hidden;
-    }
-    .family-wrapbox{
-        width:1000%;
-    }
-    .family-wrapbox li{
-        width:4.9%;
-        margin-right:5px;
-        border:2px solid #ccc;
-        transition: all 0.3s ease-in-out;
-        float:left;
-        display:block;
-    }
-    .family-wrapbox a>img{
-        width:100%
-    }
-    .monami-family>a{
-        width:182px;
-    }
-    .monami-family img{
-        width:100%;
-        border:2px solid #ccc;
-    }
 }
 
 @media (min-width:501px) and (max-width:1399px){
@@ -460,7 +412,7 @@
         background-color: #c40f39;
         display: block;
         position: absolute;
-        top:35.5%;
+        top:35%;
         left:50%;
         transform: translateX(-50%);
     }
@@ -601,12 +553,12 @@
     #news {
         width: 100%;
         height: 95vh;
-        border-bottom: 1px solid #ccc;
+
     }
 
     .news-all-box{
         width:100%;
-        height:937px;
+        height:95vh;
         margin:0 auto;
         position: relative;
     }
@@ -626,7 +578,7 @@
         background-color: #c40f39;
         display: block;
         position: absolute;
-        top: 175px;
+        top: 20%;
         left:50%;
         transform: translateX(-50%);
     }
@@ -961,6 +913,36 @@
         line-height: 27px;
     }
 
+    
+    .arrow {
+        width: 100%;
+        margin-top: 30px;
+        border-top: 2px dotted #ccc;
+        position: relative;
+    }
+
+    .arrowbox {
+        width: 450px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        bottom: -14px;
+        left: 50%;
+        transform:translate(-50%, -5%);
+    }
+
+    .arrowbox i {
+        font-size: 3rem;
+    }
+
+    .center-pointer {
+        padding: 0 8px;
+        background-color: #f1f1f1;
+        font-size: 1.6rem;
+    }
+
     /* swiper */
     .swiper {
         display: none;
@@ -996,36 +978,8 @@
         width: 100%;
         height: 414px;
     }
-    
-    .mySwiper2{margin-left:267px;}
-
-    .arrow {
-        width: 100%;
-        margin-top: 30px;
-        border-top: 2px dotted #ccc;
-        position: relative;
-    }
-
-    .arrowbox {
-        width: 450px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        bottom: -14px;
-        left: 50%;
-        transform:translate(-50%, -5%);
-    }
-
-    .arrowbox i {
-        font-size: 3rem;
-    }
-
-    .center-pointer {
-        padding: 0 8px;
-        background-color: #f1f1f1;
-        font-size: 1.6rem;
+    .mySwiper2{
+        margin-left:267px;
     }
 
     /* news */
@@ -1111,26 +1065,6 @@
     .blackrabbit-set p {
         margin-bottom: 48px;
     }
-
-    #family-box {
-        width: 100%;
-        height: 200px;
-    }
-    #family-box i{
-        display:none;
-    }
-
-    .family-wrapbox{
-        width: 1400px;
-        height: 200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .family-wrap img {
-        border: 2px solid #ccc;
-    }
 }
 
 
@@ -1139,13 +1073,13 @@
     /* new arivals */
     #new-allbox {
         width: 100%;
-        height: 1090px;
+        /* height: 900px; */
         position:relative;
     }
 
     .new {
         width: 100%;
-        height: 905px;
+        height: 1000px;
         margin: 0 auto;
         position: relative;
         top: 80px;
@@ -1271,11 +1205,10 @@
 }
 
 @media (min-width:1069px) and (max-width:1399px) {
-
     /* new arivals */
     #new-allbox {
         width: 100%;
-        height: 937px;
+        height: 850px;
         position: relative;
     }
 
@@ -1430,6 +1363,63 @@
 
 
 /* 패밀리사이트 쪼갬 */
+@media (max-width:500px) {
+    #family-box {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .monami-left,
+    .monami-right {
+        font-size: 2rem;
+        position: absolute;
+    }
+
+    .monami-left {
+        top: 38%;
+        left: 3%;
+    }
+
+    .monami-right {
+        top: 38%;
+        right: 3%;
+    }
+
+    .family-wrap {
+        width: 80%;
+        height: 100px;
+        margin: 0 auto;
+        padding: 25px 0;
+        overflow: hidden;
+    }
+
+    .family-wrapbox {
+        width: 1000%;
+    }
+
+    .family-wrapbox li {
+        width: 4.9%;
+        margin-right: 5px;
+        border: 2px solid #ccc;
+        transition: all 0.3s ease-in-out;
+        float: left;
+        display: block;
+    }
+
+    .family-wrapbox a>img {
+        width: 100%
+    }
+    .monami-family>a {
+        width: 182px;
+    }
+
+    .monami-family img {
+        width: 100%;
+        border: 2px solid #ccc;
+    }
+}
+
 @media (min-width:501px) and (max-width:999px){
     #family-box{
         width:100%;
@@ -1477,7 +1467,9 @@
 @media (min-width:1000px) and (max-width:1399px){
     #family-box {
         width: 100%;
-        height: 200px;
+        height: 150px;
+        margin-top:60px;
+        border-top: 1px solid #ccc;
     }
     #family-box i{
         display:none;
@@ -1485,7 +1477,7 @@
     
     .family-wrapbox{
         width: 100%;
-        height: 200px;
+        height: 150px;
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
@@ -1493,6 +1485,28 @@
     }
     .family-wrap img {
         width:250px;
+        border: 2px solid #ccc;
+    }
+}
+
+@media (min-width:1400px){
+    #family-box {
+        width: 100%;
+        height: 200px;
+    }
+    #family-box i{
+        display:none;
+    }
+
+    .family-wrapbox{
+        width: 1400px;
+        height: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .family-wrap img {
         border: 2px solid #ccc;
     }
 }
