@@ -216,13 +216,13 @@ h1,h2,h3,h4,h5,h6{
         display:block;
     }
     .more .img_box{
+        overflow: hidden;
         position: absolute;
         width:90%; margin:0 auto;
 
     }
     .more img{
         height:100%; left:50%; transform: translateX(-50%);
-
         position: relative;
     }
     .more .infor{
