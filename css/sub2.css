@@ -37,9 +37,9 @@ background: #c40f39;}
 line-height: 70px; position: relative; padding-left: 140px; cursor: pointer;}
 .faq:before{content: "Q."; position: absolute; font-size: 4rem; font-family: 'AppleSDGothicNeo',sans-serif;
 font-weight: 600; font-style: italic; color: #c40f39; left: 50px; letter-spacing: 5px;}
-.faq:after{content: ""; position: absolute; background: url("/Team/img/faq_bottom.png") no-repeat;
+.faq:after{content: ""; position: absolute; background: url("../img/faq_bottom.png") no-repeat;
 right: 50px; top: 27px; width: 24px; height: 14px;}
-.active:after{background: url("/Team/img/faq_top.png") no-repeat;}
+.active:after{background: url("../img/faq_top.png") no-repeat;}
 .answer{padding: 40px; background-color: #f6f6f6; border-bottom: 1px solid #ccc; position: relative; display: none;}
 .answer:before{content: "A."; position: absolute; font-size: 4rem; font-family: 'AppleSDGothicNeo',sans-serif;
     font-weight: 600; font-style: italic; color: #c6c6c6; left: 53px; letter-spacing: 5px; top:50%; transform: translateY(-50%);}
