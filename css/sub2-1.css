@@ -97,7 +97,7 @@ margin-bottom: 40px;}
     #write{padding-top: 46px;}
     #write > div > span {font-size: 1.4rem;}
     #write > div{border-bottom: 1px solid #ccc;}
-    #write > div:nth-of-type(7) > textarea{width: calc(100% - 90px);}
+    #write > div:nth-of-type(7) > textarea{width: calc(100% - 90px) !important;}
     #tele {margin-right: 10px;}
     #write > div:nth-of-type(9) > div > p {line-height: 15px; font-size: 1.2rem;}
     #write > div:nth-of-type(9) {height: 230px;}
